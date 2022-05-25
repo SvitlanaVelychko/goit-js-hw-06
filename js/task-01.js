@@ -4,7 +4,7 @@
 // 2. Для кожного элемента li.item у спику ul#categories, знайде і виведе в консоль текст заголовку
 //    елемента(тегу < h2 >) і кількість елементів в категорії(усіх < li >, вкладених в нього).
 
-const totalCategoriesEl = document.querySelectorAll('.item');
+const totalCategoriesEl = document.querySelectorAll(".item");
 console.log(`Number of categories: ${totalCategoriesEl.length}`);
 
 totalCategoriesEl.forEach((category) =>
