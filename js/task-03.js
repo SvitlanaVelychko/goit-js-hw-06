@@ -20,11 +20,10 @@ const images = [
   },
 ];
 
-const listEl = document.querySelector(".gallery");
+const galleryListEl = document.querySelector(".gallery");
 
-const itemsEl = images
-  .map(({url, alt}) => `<li class="gallery__item"><img class="gallery__image" src=${url} alt=${alt}></li>`)
+const makeGalleryImages = images.map(({ url, alt }) =>
+  `<li class="gallery__item"><img class="gallery__image" src="${url}" alt="${alt}" width="320" /></li>`)
   .join("");
 
-listEl.insertAdjacentHTML("beforeend", itemsEl);
-console.log(listEl);
+galleryListEl.insertAdjacentHTML("beforeend", makeGalleryImages);
